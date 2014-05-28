@@ -1,0 +1,48 @@
+# cert = {
+#   :id   => 'foo'
+#   :cert => ['...', '...', ] # content for .crt
+#   :key  => ['...', '...', ] # content for .key
+# }
+
+default["nginx"]["sslcertkey"]["mysitesslcert"] = {
+	:id => "mysitesslcert",
+	:cert => [
+		"-----BEGIN CERTIFICATE-----",
+		"MIIDKjCCApOgAwIBAgIJAP1tLjj7nrbsMA0GCSqGSIb3DQEBBQUAMIGtMQswCQYD",
+		"VQQGEwJTRzESMBAGA1UECAwJU2luZ2Fwb3JlMRIwEAYDVQQHDAlTaW5nYXBvcmUx",
+		"FjAUBgNVBAoMDURldiBNeUFjY291bnQxDDAKBgNVBAsMA0RldjEkMCIGA1UEAwwb",
+		"ZGV2Lm15YWNjb3VudC5sYXRlcm9vbXMuY29tMSowKAYJKoZIhvcNAQkBFhtkZXYu",
+		"bXlhY2NvdW50QGxhdGVyb29tcy5jb20wHhcNMTQwNTI4MDQxNzExWhcNMTQwNjI3",
+		"MDQxNzExWjCBrTELMAkGA1UEBhMCU0cxEjAQBgNVBAgMCVNpbmdhcG9yZTESMBAG",
+		"A1UEBwwJU2luZ2Fwb3JlMRYwFAYDVQQKDA1EZXYgTXlBY2NvdW50MQwwCgYDVQQL",
+		"DANEZXYxJDAiBgNVBAMMG2Rldi5teWFjY291bnQubGF0ZXJvb21zLmNvbTEqMCgG",
+		"CSqGSIb3DQEJARYbZGV2Lm15YWNjb3VudEBsYXRlcm9vbXMuY29tMIGfMA0GCSqG",
+		"SIb3DQEBAQUAA4GNADCBiQKBgQDFE8uznnJ4wRUZjAKkPdY1LtL0nwB8xNV+9HwI",
+		"+9EjjAoN1y6humPtYGMEqnCQdH+kZVFt8J5cb2NBHKBo6+9aBjD+xxMKDgDHGQXM",
+		"Q22AlS6R/Q5DjeHuoXijwJUz++ymoHOnuZsbVy9aCT9oH5XVvpI1JZof0/TZUGfm",
+		"B7gDewIDAQABo1AwTjAdBgNVHQ4EFgQUKC+K0fr6VL+dmlRYgO+GQvhguOEwHwYD",
+		"VR0jBBgwFoAUKC+K0fr6VL+dmlRYgO+GQvhguOEwDAYDVR0TBAUwAwEB/zANBgkq",
+		"hkiG9w0BAQUFAAOBgQCrSXnujBkvqfRfCnI2k4FXqZzF88tsMR6H10NQfIao6XsM",
+		"wkuZBi9O/ghI34W/pevG1owA5kRnKEOyRSEw992wRBnfMgv4HvVBfIs1DJLIyQqu",
+		"yp3yAas+YT2BV/DNsdJZmOMFQh3OLKkh9D8idR6kS+HAtJK/PQAp9QaikBUwKg==",
+		"-----END CERTIFICATE-----"
+    ],
+    :key => [
+		"-----BEGIN PRIVATE KEY-----",
+		"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMUTy7OecnjBFRmM",
+		"AqQ91jUu0vSfAHzE1X70fAj70SOMCg3XLqG6Y+1gYwSqcJB0f6RlUW3wnlxvY0Ec",
+		"oGjr71oGMP7HEwoOAMcZBcxDbYCVLpH9DkON4e6heKPAlTP77Kagc6e5mxtXL1oJ",
+		"P2gfldW+kjUlmh/T9NlQZ+YHuAN7AgMBAAECgYBY81JhxAZO0nc/jJ40m2RvpK66",
+		"knmZ1w21u4uwUlhW/wIatSDrBkHMBlEq7fLYgHyMKt7SDGStu+jEnrMYKEVjRDBV",
+		"dVaF2xIJhHkP2c2UjaXC97QYANTk+lN3u95FDyxH8JsWTyEnIqXaaWYmSEGdxBJQ",
+		"fuBWsBdjhRA/kB8ywQJBAP9l/HInDtWUA3mRAUXerIpr/J44665D4yIrKOVWA6tM",
+		"tu1FfYt+j5eCKktmDkKXLKwL0RyeFIUdm8Ngc2VRuqMCQQDFiqPYQznC5dFyxtWy",
+		"fmYi+P9khNMJSiZeGaOSq5HSQevrPDqjnA8XUhjvUDKEM1Td56mSg7uu0YgmE8Qw",
+		"7rlJAkEAjzoRja7rucjs/fLc5OMQnfwbSlwfh7YYnaPYpmxLWHiIKZ4L3vvV6SCd",
+		"OXV9T8jZy45A8iyQ02ocXUAs1sgzwwJAOT1ZCJtCK3VIYYe3+Eaj9dJMvqW2OOTh",
+		"hTbMrP1F/bTYVYtYOnxH6ywAyadlW+U73Cj6e9fsFFXmq5HisYMa8QJAcIAbUrpv",
+		"4HRlGtHj8IcOCxNuJMmq6yrTpSyESYAd3wntddLNgie3TFBuPEujZ89kF6oBcn6O",
+		"c7ya5F+abCTDSw==",
+		"-----END PRIVATE KEY-----"
+    ]
+}
