@@ -7,7 +7,7 @@ default[:nginx][:disable_access_log] = true
 
 # The following are new attributes defined in this cookbook.
 default[:nginx][:listen]        = "80"
-default[:nginx][:server_name]   = "dev.myaccount.laterooms.com"
+default[:nginx][:server_name]   = "mysite.com"
 default[:nginx][:ssldir]        = "ssl" # inside [:nginx][:dir]
 default[:nginx][:ssl_protocols] = "SSLv3 TLSv1" # PCI compliant
 default[:nginx][:ssl_ciphers]   = "ALL:!aNULL:!ADH:!eNULL:!LOW:!MEDIUM:!EXP:RC4+RSA:+HIGH"
