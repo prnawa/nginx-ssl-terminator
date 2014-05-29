@@ -16,7 +16,7 @@ default[:nginx][:ssl_prefer_server_ciphers] = 'on'
 default[:nginx][:use_epoll]     = true
 default[:nginx][:multi_accept]  = true 
 default[:nginx][:ssl_only]      = true # redirect all traffic from port 80 -> 443
-default[:nginx][:cert_items]    = ["mysitesslcert"]
+default[:nginx][:cert_items]    = nil
 
 # Config for upstream
 default[:nginx][:upstream][:host] = "127.0.0.1"
