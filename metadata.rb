@@ -1,3 +1,4 @@
+name              "nginx-ssl-terminator"
 description       "nginx as an ssl terminator and reverse proxy"
 version           "0.1.2"
 
